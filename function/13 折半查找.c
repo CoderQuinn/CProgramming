@@ -44,7 +44,7 @@ int  Search_Bin(SSTable T, KeyType k)
 {
     int low = 1;
     int high = T.length;
-    while (low != high ) {
+    while (low <= high ) {
         int mid = (low + high) / 2;
         if (T.R[mid].key == k) {
             return mid;
